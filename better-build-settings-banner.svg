@@ -1,0 +1,91 @@
+<svg width="1280" height="420" viewBox="0 0 1280 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1280" y2="420" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0B1020"/>
+      <stop offset="0.52" stop-color="#111827"/>
+      <stop offset="1" stop-color="#1E293B"/>
+    </linearGradient>
+
+    <linearGradient id="accent" x1="160" y1="30" x2="1120" y2="390" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#38BDF8"/>
+      <stop offset="0.5" stop-color="#818CF8"/>
+      <stop offset="1" stop-color="#A78BFA"/>
+    </linearGradient>
+
+    <linearGradient id="card" x1="72" y1="52" x2="1208" y2="368" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#111827" stop-opacity="0.96"/>
+      <stop offset="1" stop-color="#020617" stop-opacity="0.88"/>
+    </linearGradient>
+
+    <filter id="shadow" x="-12%" y="-18%" width="124%" height="136%">
+      <feDropShadow dx="0" dy="22" stdDeviation="28" flood-color="#000000" flood-opacity="0.42"/>
+    </filter>
+
+    <filter id="glow" x="-45%" y="-45%" width="190%" height="190%">
+      <feGaussianBlur stdDeviation="34" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="
+        0 0 0 0 0.25
+        0 0 0 0 0.55
+        0 0 0 0 1
+        0 0 0 0.50 0"/>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="420" rx="34" fill="url(#bg)"/>
+
+  <circle cx="1130" cy="66" r="140" fill="#38BDF8" opacity="0.14" filter="url(#glow)"/>
+  <circle cx="105" cy="350" r="150" fill="#A78BFA" opacity="0.13" filter="url(#glow)"/>
+
+  <path d="M36 86 C202 10, 330 154, 500 78 C690 -8, 852 44, 1014 130 C1120 186, 1200 160, 1246 112" stroke="url(#accent)" stroke-width="2" opacity="0.24"/>
+  <path d="M28 342 C210 256, 348 370, 518 292 C704 208, 850 284, 1018 226 C1132 186, 1202 226, 1248 260" stroke="url(#accent)" stroke-width="2" opacity="0.17"/>
+
+  <g filter="url(#shadow)">
+    <rect x="58" y="48" width="1164" height="312" rx="30" fill="url(#card)" stroke="#334155" stroke-width="1.2"/>
+
+    <g transform="translate(104 94)">
+      <rect x="0" y="0" width="86" height="86" rx="22" fill="#0F172A" stroke="#334155" stroke-width="1.2"/>
+      <path d="M43 16 L66 30 V56 L43 70 L20 56 V30 L43 16Z" stroke="url(#accent)" stroke-width="4.5" stroke-linejoin="round"/>
+      <path d="M43 16 V43 M20 30 L43 43 L66 30 M43 43 V70" stroke="#E0F2FE" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round" opacity="0.92"/>
+    </g>
+
+    <text x="220" y="132" fill="#F8FAFC" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="66" font-weight="800" letter-spacing="-1.7">
+      Better Build Settings
+    </text>
+
+    <text x="224" y="184" fill="#CBD5E1" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="25" font-weight="500">
+      Modular Unity build profiles for repeatable builds
+    </text>
+
+    <g transform="translate(224 224)">
+      <rect x="0" y="0" width="138" height="42" rx="21" fill="#0F172A" stroke="#334155"/>
+      <circle cx="28" cy="21" r="6" fill="#38BDF8"/>
+      <text x="46" y="28" fill="#E2E8F0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="650">Core</text>
+
+      <rect x="154" y="0" width="158" height="42" rx="21" fill="#0F172A" stroke="#334155"/>
+      <circle cx="182" cy="21" r="6" fill="#818CF8"/>
+      <text x="200" y="28" fill="#E2E8F0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="650">Defines</text>
+
+      <rect x="328" y="0" width="210" height="42" rx="21" fill="#0F172A" stroke="#334155"/>
+      <circle cx="356" cy="21" r="6" fill="#A78BFA"/>
+      <text x="374" y="28" fill="#E2E8F0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="650">Addressables</text>
+    </g>
+
+    <g transform="translate(224 304)">
+      <path d="M0 0 H704" stroke="#334155" stroke-width="1"/>
+      <text x="0" y="34" fill="#94A3B8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="19" font-weight="500">
+        Profiles • JSON configs • Restore after build • CI-ready architecture
+      </text>
+    </g>
+
+    <g transform="translate(1032 190)">
+      <rect x="0" y="0" width="118" height="118" rx="26" fill="#020617" stroke="#334155"/>
+      <path d="M59 20 L93 40 V78 L59 98 L25 78 V40 L59 20Z" fill="#111827" stroke="url(#accent)" stroke-width="3.4"/>
+      <path d="M59 35 L77 46 V68 L59 79 L41 68 V46 L59 35Z" fill="#0F172A" stroke="#E0F2FE" stroke-width="2.2" opacity="0.92"/>
+      <path d="M59 20 V35 M25 40 L41 46 M93 40 L77 46 M59 79 V98" stroke="#38BDF8" stroke-width="2" opacity="0.72"/>
+    </g>
+  </g>
+
+  <text x="640" y="397" text-anchor="middle" fill="#64748B" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="16" font-weight="500">
+    com.h-loki.better-build-settings
+  </text>
+</svg>
