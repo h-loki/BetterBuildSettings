@@ -1,0 +1,22 @@
+{
+  "name": "com.h-loki.better-build-settings.addressables",
+  "version": "1.0.0",
+  "displayName": "Better Build Settings - Addressables",
+  "description": "Addressables module for Better Build Settings.",
+  "unity": "2021.3",
+  "dependencies": {
+    "com.unity.addressables": "1.21.21",
+    "com.unity.nuget.newtonsoft-json": "3.2.1"
+  },
+  "author": {
+    "name": "h-loki",
+    "url": "https://github.com/h-loki"
+  },
+  "keywords": [
+    "unity",
+    "editor",
+    "build",
+    "addressables"
+  ],
+  "license": "MIT"
+}

@@ -1,0 +1,15 @@
+{
+  "name": "BetterBuildSettings.Addressables.Editor",
+  "references": [
+    "BetterBuildSettings.Core.Editor",
+    "Unity.Addressables",
+    "Unity.Addressables.Editor",
+    "Unity.ResourceManager",
+    "Unity.Newtonsoft.Json",
+    "Sirenix.OdinInspector.Editor"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "autoReferenced": true
+}

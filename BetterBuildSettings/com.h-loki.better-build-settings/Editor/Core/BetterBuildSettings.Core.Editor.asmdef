@@ -1,0 +1,9 @@
+{
+  "name": "BetterBuildSettings.Core.Editor",
+  "references": [
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "autoReferenced": true
+}

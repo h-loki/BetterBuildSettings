@@ -1,0 +1,12 @@
+{
+  "name": "BetterBuildSettings.DefineModule.Editor",
+  "references": [
+    "BetterBuildSettings.Core.Editor",
+    "Unity.Newtonsoft.Json",
+    "Sirenix.OdinInspector.Editor"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ],
+  "autoReferenced": true
+}

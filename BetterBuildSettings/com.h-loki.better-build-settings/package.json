@@ -1,0 +1,21 @@
+{
+  "name": "com.h-loki.better-build-settings",
+  "version": "1.0.0",
+  "displayName": "Better Build Settings",
+  "description": "Core editor package for modular Unity build profiles.",
+  "unity": "2021.3",
+  "dependencies": {
+    "com.unity.nuget.newtonsoft-json": "3.2.1"
+  },
+  "author": {
+    "name": "h-loki",
+    "url": "https://github.com/h-loki"
+  },
+  "keywords": [
+    "unity",
+    "editor",
+    "build",
+    "profiles"
+  ],
+  "license": "MIT"
+}
