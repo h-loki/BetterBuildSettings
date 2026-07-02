@@ -14,7 +14,10 @@ public class DefineModule : IBuildModule
     public string Id => "Defines";
     public string DisplayName => "Defines";
 
-    [ShowInInspector] [HideLabel] private DefineModuleConfig _config = new();
+    [ShowInInspector] 
+    [HideLabel] 
+    [HideReferenceObjectPicker]
+    private DefineModuleConfig _config = new();
 
     private string _originalDefines;
 

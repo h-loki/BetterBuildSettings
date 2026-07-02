@@ -14,7 +14,10 @@ public sealed class AddressablesModule : IBuildModule
     public string Id => "addressables";
     public string DisplayName => "Addressables";
 
-    [ShowInInspector] [HideLabel] private AddressablesModuleConfig _config = new();
+    [ShowInInspector]
+    [HideLabel]
+    [HideReferenceObjectPicker]
+    private AddressablesModuleConfig _config = new();
 
     private readonly Dictionary<string, bool> _originalIncludeInBuildByGroupName = new();
 
