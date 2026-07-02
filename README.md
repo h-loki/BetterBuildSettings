@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./better-build-settings-banner.svg" alt="Better Build Settings" />
+  <img src="./documentation/banner.svg" alt="Better Build Settings" />
 </p>
 
 Better Build Settings is a modular Unity build configuration tool for repeatable builds inside the Unity Editor and CI/CD pipelines.
