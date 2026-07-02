@@ -85,7 +85,10 @@ Configure module settings.
 
 Press:
 
-BUILD
+<p align="left">
+  <img src="./documentation/build_button.svg" alt="Build button" />
+</p>
+
 
 
 ### Build Profiles
