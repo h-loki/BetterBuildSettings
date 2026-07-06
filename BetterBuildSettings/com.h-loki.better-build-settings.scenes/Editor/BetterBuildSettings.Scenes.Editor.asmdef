@@ -1,0 +1,10 @@
+{
+    "name": "BetterBuildSettings.Scenes.Editor",
+    "references": [
+        "BetterBuildSettings.Core.Editor"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "autoReferenced": true
+}
