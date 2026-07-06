@@ -4,11 +4,11 @@ Addressables module for Better Build Settings.
 
 Install core first:
 ```
-https://github.com/h-loki/BetterBuildSettings.git?path=/BetterBuildSettings/com.h-loki.better-builds
+https://github.com/h-loki/BetterBuildSettings.git?path=/BetterBuildSettings/com.h-loki.better-builds-settings
 ```
 Then install this module:
 ```
-https://github.com/h-loki/BetterBuildSettings.git?path=/BetterBuildSettings/com.h-loki.better-builds.addressables
+https://github.com/h-loki/BetterBuildSettings.git?path=/BetterBuildSettings/com.h-loki.better-builds-settings.addressables
 ```
 Requirements:
 

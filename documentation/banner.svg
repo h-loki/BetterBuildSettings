@@ -68,6 +68,10 @@
       <rect x="328" y="0" width="210" height="42" rx="21" fill="#0F172A" stroke="#334155"/>
       <circle cx="356" cy="21" r="6" fill="#A78BFA"/>
       <text x="374" y="28" fill="#E2E8F0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="650">Addressables</text>
+
+      <rect x="554" y="0" width="148" height="42" rx="21" fill="#0F172A" stroke="#334155"/>
+      <circle cx="582" cy="21" r="6" fill="#22C55E"/>
+      <text x="600" y="28" fill="#E2E8F0" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="18" font-weight="650">Scenes</text>
     </g>
 
     <g transform="translate(224 304)">

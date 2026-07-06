@@ -17,12 +17,12 @@ The tool provides:
 
 Better Build Settings is split into separate Unity packages.
 
-| Package | Purpose |
-|---|---|
-| `com.h-loki.better-build-settings` | Core package. Provides profiles, build window, module API and build flow. |
-| `com.h-loki.better-build-settings.defines` | Defines module. Controls scripting define symbols. |
-| `com.h-loki.better-build-settings.addressables` | Addressables module. Controls Addressables groups included in build. |
-
+| Package | Purpose | Documentation |
+|---|---|---|
+| `com.h-loki.better-build-settings` | Core package. Provides profiles, build window, module API, and build flow. | [Read more](./BetterBuildSettings/com.h-loki.better-build-settings/README.md) |
+| `com.h-loki.better-build-settings.defines` | Defines module. Controls scripting define symbols. | [Read more](./BetterBuildSettings/com.h-loki.better-build-settings.defines/README.md) |
+| `com.h-loki.better-build-settings.addressables` | Addressables module. Controls Addressables groups included in a build. | [Read more](./BetterBuildSettings/com.h-loki.better-build-settings.addressables/README.md) |
+| `com.h-loki.better-build-settings.scenes` | Scenes module. Controls scenes included in build settings. | [Read more](./BetterBuildSettings/com.h-loki.better-build-settings.scenes/README.md) |
 Install the core package first. Then install only the modules you need.
 
 ## Installation
@@ -44,6 +44,14 @@ Install Addressables module:
 ```
 https://github.com/h-loki/BetterBuildSettings.git?path=/BetterBuildSettings/com.h-loki.better-build-settings.addressables
 ```
+Install Scenes module:
+
+Install this package if you need scene list control for build profiles:
+
+```text
+https://github.com/h-loki/BetterBuildSettings.git?path=/BetterBuildSettings/com.h-loki.better-build-settings.scenes
+```
+
 Or add packages to Packages/manifest.json:
 ```
 {
