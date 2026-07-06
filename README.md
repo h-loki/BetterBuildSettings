@@ -23,6 +23,8 @@ Better Build Settings is split into separate Unity packages.
 | `com.h-loki.better-build-settings.defines` | Defines module. Controls scripting define symbols. | [Read more](./BetterBuildSettings/com.h-loki.better-build-settings.defines/README.md) |
 | `com.h-loki.better-build-settings.addressables` | Addressables module. Controls Addressables groups included in a build. | [Read more](./BetterBuildSettings/com.h-loki.better-build-settings.addressables/README.md) |
 | `com.h-loki.better-build-settings.scenes` | Scenes module. Controls scenes included in build settings. | [Read more](./BetterBuildSettings/com.h-loki.better-build-settings.scenes/README.md) |
+
+
 Install the core package first. Then install only the modules you need.
 
 ## Installation
