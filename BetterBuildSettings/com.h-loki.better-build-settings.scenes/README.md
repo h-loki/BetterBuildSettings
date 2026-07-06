@@ -1,8 +1,8 @@
 [← Back to main README](../../README.md)
 
-# Better Build Settings - Addressables
+# Better Build Settings - Scenes
 
-Addressables module for Better Build Settings.
+Scenes module for Better Build Settings.
 
 Install core first:
 ```
@@ -12,5 +12,3 @@ Then install this module:
 ```
 https://github.com/h-loki/BetterBuildSettings.git?path=/BetterBuildSettings/com.h-loki.better-builds-settings.scenes
 ```
-### Requirements:
-- Unity Addressables
