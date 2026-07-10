@@ -1,6 +1,6 @@
 {
   "name": "com.h-loki.better-build-settings",
-  "version": "1.0.0",
+  "version": "0.1.0-preview.1",
   "displayName": "Better Build Settings",
   "description": "Modular Unity build profiles with configurable output folders, executable names, and reusable naming variables.",
   "unity": "2021.3",

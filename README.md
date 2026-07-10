@@ -4,14 +4,64 @@
 
 Better Build Settings is a modular Unity build configuration tool for repeatable builds inside the Unity Editor and CI/CD pipelines.
 
-The tool provides:
+Better Build Settings lets you describe a build configuration explicitly instead of repeatedly changing scenes, scripting define symbols, Addressables profiles, and other project settings by hand.
 
-- build profiles;
-- modular build pipeline customization;
-- Addressables group control;
-- scripting define symbol control;
-- automatic restore of project state after build;
-- JSON-based configuration storage.
+The package is intended for projects that need multiple reproducible build variants, such as:
+
+- Development and production builds
+- Client-specific builds
+- Demo and full-game configurations
+- Builds with different scene sets
+- Builds with different scripting define symbols
+- Builds using different Addressables profiles
+
+
+[!WARNING]
+Better Build Settings is currently an experimental prototype under active development.
+
+The API, configuration format, package structure, and module lifecycle may change between versions. Do not introduce it into a critical release pipeline without reviewing the source code, testing recovery behavior, and pinning the package to a specific commit or release.
+
+## Why Better Build Settings?
+
+Unity build configuration is commonly distributed across several unrelated systems:
+
+- Build Settings
+- PlayerSettings
+- Scripting define symbols
+- Addressables settings
+- Custom build scripts
+- Environment-specific editor state
+
+This works until a project has more than one build variant.
+
+At that point, build preparation often becomes a sequence of undocumented manual steps or a large project-specific script with implicit state and fragile cleanup logic.
+
+Better Build Settings approaches the problem differently:
+
+1. A build is described by a profile.
+2. Each concern is handled by an independent module.
+3. Modules apply their configuration before the build. 
+4. Previous project state is restored after the build attempt.
+
+**The goal** is to make build configuration explicit, reviewable, extensible, and eventually suitable for automation.
+
+##  Project status
+
+Current maturity: experimental / prototype
+
+The project is usable for evaluation, internal tooling, and controlled development environments. It should not yet be treated as a drop-in production build system.
+
+Current limitations may include:
+
+- Limited build-target support
+- Incomplete command-line and batch-mode workflows
+- No guarantee of recovery after an editor crash or forced process termination
+- Potential breaking changes in configuration schemas
+- Limited automated test coverage
+- Limited validation across Unity and Addressables versions
+- Incomplete documentation for custom module development
+
+The repository is being developed in public so that its architecture and failure modes can be reviewed early.
 
 ## Packages
 

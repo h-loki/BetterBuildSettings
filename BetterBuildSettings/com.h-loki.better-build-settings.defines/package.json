@@ -1,6 +1,6 @@
 {
   "name": "com.h-loki.better-build-settings.defines",
-  "version": "1.0.0",
+  "version": "0.1.0-preview.1",
   "displayName": "Better Build Settings - Defines",
   "description": "Scripting define symbols module for Better Build Settings.",
   "unity": "2021.3",
