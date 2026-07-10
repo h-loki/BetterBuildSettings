@@ -1,4 +1,5 @@
-﻿using UnityEditor;
+﻿using BetterBuildSettings.Core;
+using UnityEditor;
 
 namespace BetterBuildSettings.com.h_loki.better_build_settings.scenes.Editor
 {

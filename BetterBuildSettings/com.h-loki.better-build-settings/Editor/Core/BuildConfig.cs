@@ -1,8 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using BetterBuildSettings.Core.Output;
 
-[Serializable]
-public class BuildConfig
+namespace BetterBuildSettings.Core
 {
-    public List<ModuleConfig> Modules = new();
+    [Serializable]
+    public class BuildConfig
+    {
+        public BuildOutputSettings Output = new();
+        public List<ModuleConfig> Modules = new();
+    }
 }

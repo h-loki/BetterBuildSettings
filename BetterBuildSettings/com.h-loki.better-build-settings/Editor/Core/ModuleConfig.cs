@@ -1,10 +1,13 @@
 ﻿using System;
 using Newtonsoft.Json.Linq;
 
-[Serializable]
-public class ModuleConfig
+namespace BetterBuildSettings.Core
 {
-    public string ModuleId;
-    public bool Enabled;
-    public JObject JsonPayload;
+    [Serializable]
+    public class ModuleConfig
+    {
+        public string ModuleId;
+        public bool Enabled;
+        public JObject JsonPayload;
+    }
 }

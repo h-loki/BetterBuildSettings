@@ -3,68 +3,70 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 
-
-public static class BuildConfigSerializer
+namespace BetterBuildSettings.Core
 {
-    private const string FolderPath = "Assets/BuildConfigs";
-
-    public static BuildConfig LoadOrCreate(string configName)
+    public static class BuildConfigSerializer
     {
-        var path = GetPath(configName);
+        private const string FolderPath = "Assets/BuildConfigs";
 
-        if (!File.Exists(path))
-            return new BuildConfig();
+        public static BuildConfig LoadOrCreate(string configName)
+        {
+            var path = GetPath(configName);
 
-        var json = File.ReadAllText(path);
+            if (!File.Exists(path))
+                return new BuildConfig();
 
-        return Newtonsoft.Json.JsonConvert.DeserializeObject<BuildConfig>(json)
-               ?? new BuildConfig();
-    }
+            var json = File.ReadAllText(path);
 
-    public static void Save(string configName, BuildConfig config)
-    {
-        if (config == null)
-            throw new ArgumentNullException(nameof(config));
+            return Newtonsoft.Json.JsonConvert.DeserializeObject<BuildConfig>(json)
+                   ?? new BuildConfig();
+        }
 
-        var path = GetPath(configName);
+        public static void Save(string configName, BuildConfig config)
+        {
+            if (config == null)
+                throw new ArgumentNullException(nameof(config));
 
-        var directory = Path.GetDirectoryName(path);
-        if (!string.IsNullOrEmpty(directory))
-            Directory.CreateDirectory(directory);
+            var path = GetPath(configName);
 
-        var json = Newtonsoft.Json.JsonConvert.SerializeObject(
-            config,
-            Newtonsoft.Json.Formatting.Indented
-        );
+            var directory = Path.GetDirectoryName(path);
+            if (!string.IsNullOrEmpty(directory))
+                Directory.CreateDirectory(directory);
 
-        File.WriteAllText(path, json);
+            var json = Newtonsoft.Json.JsonConvert.SerializeObject(
+                config,
+                Newtonsoft.Json.Formatting.Indented
+            );
+
+            File.WriteAllText(path, json);
 
 #if UNITY_EDITOR
-        UnityEditor.AssetDatabase.Refresh();
+            UnityEditor.AssetDatabase.Refresh();
 #endif
-    }
+        }
 
-    public static List<string> GetExistingConfigNames()
-    {
-        Directory.CreateDirectory(FolderPath);
+        public static List<string> GetExistingConfigNames()
+        {
+            Directory.CreateDirectory(FolderPath);
 
-        return Directory
-            .GetFiles(FolderPath, "*.json")
-            .Select(Path.GetFileNameWithoutExtension)
-            .Where(x => !string.IsNullOrWhiteSpace(x))
-            .OrderBy(x => x)
-            .ToList();
-    }
+            return Directory
+                .GetFiles(FolderPath, "*.json")
+                .Select(Path.GetFileNameWithoutExtension)
+                .Where(x => !string.IsNullOrWhiteSpace(x))
+                .OrderBy(x => x)
+                .ToList();
+        }
 
-    private static string GetPath(string configName)
-    {
-        if (string.IsNullOrWhiteSpace(configName))
-            throw new ArgumentException("Config name cannot be empty.", nameof(configName));
+        private static string GetPath(string configName)
+        {
+            if (string.IsNullOrWhiteSpace(configName))
+                throw new ArgumentException("Config name cannot be empty.", nameof(configName));
 
-        var invalidChars = Path.GetInvalidFileNameChars();
-        if (configName.IndexOfAny(invalidChars) >= 0)
-            throw new ArgumentException($"Config name contains invalid characters: {configName}", nameof(configName));
+            var invalidChars = Path.GetInvalidFileNameChars();
+            if (configName.IndexOfAny(invalidChars) >= 0)
+                throw new ArgumentException($"Config name contains invalid characters: {configName}", nameof(configName));
 
-        return Path.Combine(FolderPath, $"{configName}.json");
+            return Path.Combine(FolderPath, $"{configName}.json");
+        }
     }
 }

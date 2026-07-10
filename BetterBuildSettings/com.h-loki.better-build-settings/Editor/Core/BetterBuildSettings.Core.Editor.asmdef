@@ -1,9 +1,16 @@
 {
-  "name": "BetterBuildSettings.Core.Editor",
-  "references": [
-  ],
-  "includePlatforms": [
-    "Editor"
-  ],
-  "autoReferenced": true
+    "name": "BetterBuildSettings.Core.Editor",
+    "rootNamespace": "BetterBuildSettings.Core",
+    "references": [],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
 }

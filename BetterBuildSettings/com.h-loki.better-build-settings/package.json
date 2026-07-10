@@ -2,7 +2,7 @@
   "name": "com.h-loki.better-build-settings",
   "version": "1.0.0",
   "displayName": "Better Build Settings",
-  "description": "Core editor package for modular Unity build profiles.",
+  "description": "Modular Unity build profiles with configurable output folders, executable names, and reusable naming variables.",
   "unity": "2021.3",
   "dependencies": {
     "com.unity.nuget.newtonsoft-json": "3.2.1"

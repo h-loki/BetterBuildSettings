@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using BetterBuildSettings.Core;
 using Newtonsoft.Json.Linq;
 using Sirenix.OdinInspector;
 using UnityEditor.AddressableAssets;

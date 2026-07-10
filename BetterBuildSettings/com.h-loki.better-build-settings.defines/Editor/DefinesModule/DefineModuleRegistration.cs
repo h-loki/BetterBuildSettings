@@ -1,5 +1,6 @@
 ﻿#if UNITY_EDITOR
 
+using BetterBuildSettings.Core;
 using UnityEditor;
 
 [InitializeOnLoad]
