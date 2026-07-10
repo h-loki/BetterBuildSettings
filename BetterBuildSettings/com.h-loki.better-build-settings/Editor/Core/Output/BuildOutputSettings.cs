@@ -8,7 +8,7 @@ namespace BetterBuildSettings.Core.Output
         public string OutputRoot = "Builds";
         public bool AskForOutputRootBeforeBuild = true;
 
-        public string BuildFolderPattern = "%profile%_%date:yyyyMMdd_HHmmss%";
+        public string BuildFolderPattern = "%configName%_%date:yyyyMMdd_HHmmss%";
         public string ExecutableNamePattern = "%productName%";
     }
 }

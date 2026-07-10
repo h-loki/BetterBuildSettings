@@ -1,2 +1,7 @@
 !*cs.meta
-./*meta
+./meta
+README*meta
+CHANGELOG*meta
+documentation.meta
+documentation/*meta
+LICENSE.meta
